@@ -1,0 +1,19 @@
+index.html
+  s_db92a1a8823562::t_4dae9ba87a58e3 1-456
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "501942b3d22ead4a2c3e50fc7ae453933fab3293",
+  "prompts": {},
+  "sessions": {
+    "s_db92a1a8823562": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "2e5c3349-cb7f-40fb-a845-6dc2d0fdead2",
+        "model": "unknown"
+      },
+      "human_author": "Nando (Hernando Alvarado) <nandoalvarado022@gmail.com>"
+    }
+  }
+}
