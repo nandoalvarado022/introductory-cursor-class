@@ -1,0 +1,19 @@
+README.md
+  s_4da207ad4ada61::t_cf5f79d9df3471 1-3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7e3b6e9eb1ae6d9236f535bfa679cb9e09606d8f",
+  "prompts": {},
+  "sessions": {
+    "s_4da207ad4ada61": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "371b98f4-1785-4dbb-a436-ebecc8429d77",
+        "model": "unknown"
+      },
+      "human_author": "Nando (Hernando Alvarado) <nandoalvarado022@gmail.com>"
+    }
+  }
+}
