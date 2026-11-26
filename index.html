@@ -137,6 +137,38 @@
     .customizations-copy h3 { margin-bottom: 12px; font-family: var(--serif); font-size: 30px; font-weight: 400; line-height: 1.2; }
     .customizations-copy p { color: #526358; font-size: 17px; }
     .customizations-copy p:last-child { margin-bottom: 0; }
+    .grok-bots-layout { margin-top: 55px; }
+    .grok-bots-layout .customizations-figure { max-width: 420px; }
+    .grok-tags { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 20px 0 0; list-style: none; }
+    .grok-tags li { padding: 6px 13px; border: 1px solid #cbd9cb; background: var(--pale); color: var(--dark); font-size: 14px; font-weight: 700; }
+    .grok-team-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(250px, 1fr); gap: 24px; align-items: start; margin-top: 30px; }
+    .grok-team-layout .agent-figure { min-width: 0; margin: 0; }
+    .grok-notes { padding: 24px 28px 24px 38px; border: 1px solid #ded5bd; background: repeating-linear-gradient(to bottom, #fffdf4 0, #fffdf4 31px, #dce5dc 32px); box-shadow: inset 4px 0 #d9a69a; }
+    .grok-notes h3 { margin-bottom: 12px; color: var(--dark); font-family: var(--serif); font-size: 26px; font-weight: 400; }
+    .grok-notes ol { margin: 0; padding-left: 22px; color: #526358; font-size: 17px; line-height: 1.65; }
+    .grok-notes li + li { margin-top: 12px; }
+    .synthesis { margin-top: 72px; }
+    .synthesis > h3 { margin-bottom: 20px; font-family: var(--serif); font-size: clamp(32px, 4vw, 46px); font-weight: 400; line-height: 1.15; }
+    .synthesis-panel { padding: clamp(24px, 4vw, 48px); border: 1px solid #e1d3bb; background-color: #f3ead9; background-image: linear-gradient(#e9ddca 1px, transparent 1px), linear-gradient(90deg, #e9ddca 1px, transparent 1px); background-size: 56px 56px; color: #24231f; }
+    .synthesis-kicker { margin-bottom: 12px; font-size: 12px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+    .synthesis-panel h4 { max-width: 800px; margin: 0; font-size: clamp(32px, 4vw, 52px); line-height: 1.08; letter-spacing: -.04em; }
+    .synthesis-panel h4::after { content: ""; display: block; width: min(100%, 560px); height: 7px; margin-top: 18px; border-radius: 4px; background: #e89a48; }
+    .synthesis-flow { display: grid; grid-template-columns: minmax(140px, 180px) minmax(35px, 1fr) minmax(145px, 210px) minmax(35px, 1fr) minmax(190px, 280px); align-items: center; gap: 12px; margin-top: 35px; }
+    .synthesis-phone { padding: 22px 14px; border: 9px solid #24231f; border-radius: 28px; background: #fffdf6; box-shadow: 0 5px 12px #24231f22; }
+    .synthesis-phone strong { display: block; margin-bottom: 14px; font-size: 20px; }
+    .synthesis-phone span { display: block; margin-bottom: 10px; padding: 10px; border-radius: 9px; background: #e5dfd3; font-size: 15px; font-weight: 700; line-height: 1.3; }
+    .synthesis-phone span:first-of-type { background: #e89a48; }
+    .synthesis-phone p { margin: 20px 0 0; font-size: 14px; font-weight: 700; line-height: 1.3; }
+    .synthesis-director { padding: 22px 12px; border-radius: 16px; background: #e89a48; text-align: center; line-height: 1.3; }
+    .synthesis-director strong { display: block; font-size: 23px; }
+    .synthesis-director span { font-size: 15px; }
+    .synthesis-arrow { display: block; width: 100%; height: auto; overflow: visible; }
+    .synthesis-tasks { display: grid; gap: 18px; padding: 0; margin: 0; list-style: none; }
+    .synthesis-tasks li { display: flex; align-items: center; gap: 10px; }
+    .synthesis-task { flex: 1; padding: 16px 10px; border-radius: 14px; background: #24231f; color: #fffdf6; text-align: center; font-size: 20px; font-weight: 700; }
+    .synthesis-tasks li:first-child .synthesis-task { background: #e89a48; color: #24231f; }
+    .synthesis-tag { padding: 6px 9px; border-radius: 8px; background: #fffdf6; font-size: 14px; font-weight: 700; white-space: nowrap; }
+    .synthesis-caption { margin: 24px 0 0; color: #635b4d; font-size: 14px; }
     .agent-details .card-label { margin-bottom: 16px; }
     .compare { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .compare .card { padding: 31px; }
@@ -193,6 +225,12 @@
       .parts-grid, .four-grid, .agent-details { grid-template-columns: repeat(2, 1fr); }
       .grok-layout { gap: 35px; }
     }
+    @media (max-width: 850px) {
+      .synthesis-flow { grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 16px; }
+      .synthesis-phone, .synthesis-director, .synthesis-tasks { width: min(100%, 300px); }
+      .synthesis-connector .synthesis-arrow { display: none; }
+      .synthesis-connector::after { content: "↓"; font-size: 30px; line-height: 1; }
+    }
     @media (max-width: 700px) {
       html { scroll-padding-top: 112px; }
       .wrap { width: calc(100% - 36px); }
@@ -202,7 +240,7 @@
       .nav-links { gap: 21px; }
       .nav-links a { padding: 10px 0; font-size: 13px; }
       .hero { padding: 60px 0 50px; }
-      .hero-grid, .grok-layout, .history-layout, .section-heading, .exercise, .tips-layout, .customizations-layout { grid-template-columns: 1fr; }
+      .hero-grid, .grok-layout, .history-layout, .section-heading, .exercise, .tips-layout, .customizations-layout, .grok-team-layout { grid-template-columns: 1fr; }
       .hero-grid { gap: 40px; }
       .hero-note { max-width: 440px; }
       .index-row { display: block; margin-top: 48px; }
@@ -240,6 +278,7 @@
       <nav class="nav-links" aria-label="Secciones de la clase">
         <a href="#historia">Historia</a>
         <a href="#perfiles">Perfiles</a>
+        <a href="#ciclo">El ciclo</a>
         <a href="#que-es">Qué es</a>
         <a href="#usos">Usos</a>
         <a href="#partes">Partes</a>
@@ -260,7 +299,9 @@
         <div class="hero-grid">
           <div>
             <p class="eyebrow">Guía de clase · trabajo diario</p>
-            <h1>Menos copiar y pegar.<br><em>Más avanzar.</em></h1>
+            <h1>
+              Tu equipo de IA: trabaja mejor con
+              <br><em>Cursor y Grok.</em></h1>
             <p class="hero-lead">Cursor para el trabajo diario: aprende a transformar notas, correos e ideas en documentos útiles, sin perder el control de lo que entregas.</p>
             <div class="hero-actions">
               <a class="button-link" href="#historia">Empezar la clase <span aria-hidden="true">↗</span></a>
@@ -280,7 +321,7 @@
         <div class="index-row">
           <span class="index-label">En esta clase</span>
           <div class="index-links">
-            <a href="#historia">00 / Historia</a><a href="#perfiles">Perfiles</a><a href="#que-es">01 / Qué es</a><a href="#usos">02 / Usos</a><a href="#partes">03 / Partes</a><a href="#tips">Tips</a><a href="#comparacion">04 / Comparación</a><a href="#grok">05 / Grok</a><a href="#ejercicios">06 / Ejercicios</a><a href="#para-llevar">07 / Para llevar</a>
+            <a href="#historia">00 / Historia</a><a href="#perfiles">Perfiles</a><a href="#ciclo">El ciclo</a><a href="#que-es">01 / Qué es</a><a href="#usos">02 / Usos</a><a href="#partes">03 / Partes</a><a href="#tips">Tips</a><a href="#comparacion">04 / Comparación</a><a href="#grok">05 / Grok</a><a href="#ejercicios">06 / Ejercicios</a><a href="#para-llevar">07 / Para llevar</a>
           </div>
         </div>
       </div>
@@ -323,6 +364,19 @@
             <figcaption><strong>Visual Studio Code</strong>Perfil en X · @code</figcaption>
           </figure>
         </div>
+      </div>
+      <div class="wrap section-next"><a class="button-link" href="#ciclo" aria-label="Siguiente: Entendiendo el ciclo de principio a fin">Siguiente <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="section" id="ciclo">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="section-number">En perspectiva</div>
+          <div><h2>Entendiendo el ciclo de principio a fin</h2></div>
+        </div>
+        <figure class="profile-figure">
+          <img src="ciclo-desarrollo.png" alt="Diagrama del ciclo de desarrollo de un producto: requerimientos, desarrollo, conexión con terceros, GitHub, despliegue, puesta en marcha y seguimiento posterior.">
+        </figure>
       </div>
       <div class="wrap section-next"><a class="button-link" href="#que-es" aria-label="Siguiente: Qué es Cursor">Siguiente <span aria-hidden="true">↓</span></a></div>
     </section>
@@ -438,6 +492,71 @@
             <h3>Adapta Cursor a tu forma de trabajar.</h3>
             <p>En este panel puedes explorar <strong>Plugins, MCPs, Skills, Subagents, Rules</strong> y <strong>Commands</strong> para añadir herramientas, contexto e instrucciones a tu flujo de trabajo.</p>
             <p>La captura también muestra la invitación a <strong>Grok Bot</strong>, un compañero de IA al que puedes asignar trabajo. Revisa las opciones y permisos antes de conectar servicios o habilitar nuevas herramientas.</p>
+          </div>
+        </div>
+        <div class="customizations-layout grok-bots-layout">
+          <figure class="customizations-figure">
+            <img src="grok-bots.png" alt="Interfaz de Grok Bot con varios asistentes, entre ellos Atenea, Zeus, Hestia y Talía, asignados a distintos roles.">
+            <figcaption>Ejemplo de varios Grok Bots organizados por roles.</figcaption>
+          </figure>
+          <div class="customizations-copy">
+            <h3>Un equipo de asistentes.</h3>
+            <p>Cada bot puede tener un rol y una tarea diferente, desde investigación hasta atención a la comunidad.</p>
+            <ul class="grok-tags" aria-label="Características de los bots">
+              <li>Autónomos</li>
+              <li>Proactivos</li>
+              <li>Especializados</li>
+              <li>Colaborativos</li>
+              <li>Personalizables</li>
+            </ul>
+          </div>
+        </div>
+        <div class="grok-team-layout">
+          <figure class="agent-figure">
+            <div class="agent-diagram-scroll" tabindex="0" role="region" aria-label="Organigrama de asistentes; desplázate horizontalmente para verlo completo">
+              <img class="agent-diagram" src="organigrama-grok-bots.png" alt="Organigrama con Atenea como directora y seis asistentes: Iris para inbox, Cronos para calendario, Temis para juntas, Hermes para cotizaciones, Pluto para tickets y gastos, y Prometeo para soporte.">
+            </div>
+            <figcaption>Ejemplo de un equipo de asistentes coordinado por Atenea. Desplázate horizontalmente para ver el organigrama completo.</figcaption>
+          </figure>
+          <aside class="grok-notes">
+            <h3>Apuntes del equipo</h3>
+            <ol>
+              <li>Minimizar los tiempos de comunicación hablando solo con el líder.</li>
+              <li>Cada agente se encarga de una tarea puntual.</li>
+              <li>Los agentes pueden crear más agentes bajo demanda</li>
+            </ol>
+          </aside>
+        </div>
+        <div class="synthesis" id="sintetizando">
+          <h3>Sintetizando</h3>
+          <div class="synthesis-panel">
+            <p class="synthesis-kicker">Grok Bot · Equipos de agentes</p>
+            <h4>Tu equipo trabaja.<br>Tú decides desde el celular.</h4>
+            <div class="synthesis-flow">
+              <div class="synthesis-phone">
+                <strong>Tu equipo</strong>
+                <span>Crea los agentes</span>
+                <span>Equipo en marcha</span>
+                <p>Control desde el celular</p>
+              </div>
+              <div class="synthesis-connector" aria-hidden="true">
+                <svg class="synthesis-arrow" viewBox="0 0 100 30" fill="none" stroke="#24231f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 15 H96 M85 5 L96 15 L85 25"/></svg>
+              </div>
+              <div class="synthesis-director"><strong>Directora</strong><span>Coordina y te reporta</span></div>
+              <div class="synthesis-connector" aria-hidden="true">
+                <svg class="synthesis-arrow" viewBox="0 0 100 240" fill="none" stroke="#24231f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 108 C50 108 50 30 96 30 M85 20 L96 30 L85 40"/>
+                  <path d="M2 120 H96 M85 110 L96 120 L85 130"/>
+                  <path d="M2 132 C50 132 50 210 96 210 M85 200 L96 210 L85 220"/>
+                </svg>
+              </div>
+              <ul class="synthesis-tasks" aria-label="Tareas del equipo">
+                <li><span class="synthesis-task">Investigar</span><span class="synthesis-tag">X / web</span></li>
+                <li><span class="synthesis-task">Crear</span><span class="synthesis-tag">Apps</span></li>
+                <li><span class="synthesis-task">Revisar</span><span class="synthesis-tag">Skills</span></li>
+              </ul>
+            </div>
+            <p class="synthesis-caption">Ejemplo de coordinación de agentes; las funciones disponibles dependen de la configuración y los permisos.</p>
           </div>
         </div>
       </div>
