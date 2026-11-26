@@ -1,0 +1,40 @@
+index.html
+  s_af10c0b4ee1eed::t_6fe8b99abf94e4 140-143,497-511
+  s_af10c0b4ee1eed::t_9452353c954ede 231-232,512,529-560
+  s_425c4cf2e72836::t_d657a1e1daf14d 281,324,368-379
+  s_af10c0b4ee1eed::t_e43f2f7db8ca79 150-171,228-230
+  h_15f0de19236f1a 303-304,526
+  s_af10c0b4ee1eed::t_43ba065811744e 144-149,243,513-525,527-528,561
+  s_af10c0b4ee1eed::t_995cb17c6629de 233
+  s_425c4cf2e72836::t_9de9e6eb0ec8df 380
+  s_425c4cf2e72836::t_53149c9e4c368e 302
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "aedc4c4c3fe210ea3ac0ea45a2c5865cf71a487c",
+  "prompts": {},
+  "humans": {
+    "h_15f0de19236f1a": {
+      "author": "Nando (Hernando Alvarado) <nandoalvarado022@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_425c4cf2e72836": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "e877ace4-056e-44be-93e0-d85aed5ab32d",
+        "model": "unknown"
+      },
+      "human_author": "Nando (Hernando Alvarado) <nandoalvarado022@gmail.com>"
+    },
+    "s_af10c0b4ee1eed": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "3f16e081-5404-48c7-a70b-86887e057e5f",
+        "model": "unknown"
+      },
+      "human_author": "Nando (Hernando Alvarado) <nandoalvarado022@gmail.com>"
+    }
+  }
+}
