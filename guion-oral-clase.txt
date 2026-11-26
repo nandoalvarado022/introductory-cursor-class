@@ -1,0 +1,359 @@
+GUION ORAL — CURSOR PARA EL TRABAJO DIARIO
+
+Este documento acompaña la página de la clase. Las indicaciones entre
+corchetes son para quien presenta; el resto puede decirse en voz alta o
+adaptarse al grupo. Recorre los apartados en el orden de la página y deja
+tiempo para preguntas y para probar las herramientas.
+
+ANTES DE EMPEZAR
+
+[Abre la página y ten a mano Cursor y la carpeta material-clase. Comprueba
+que puedes mostrar los archivos de ejemplo y revisa la configuración de
+aprobaciones de Cursor. La interfaz y las opciones pueden variar según la
+versión, el plan y la configuración.]
+
+Los archivos de la clase son ejemplos. Si trabajamos después con documentos
+reales, debemos comprobar qué información podemos compartir y qué permisos
+tiene la herramienta. Evitemos subir datos confidenciales o personales sin
+autorización.
+
+
+PORTADA — MENOS COPIAR Y PEGAR. MÁS AVANZAR.
+
+[Señala el título, la frase «Tú pides. Tú revisas. Tú decides» y el consejo
+desplegable. Muestra también el índice de la clase.]
+
+«Hoy vamos a conocer Cursor como un espacio para trabajar con documentos
+y con inteligencia artificial. La idea no es dejar que la herramienta
+decida por nosotros. Queremos dedicar menos tiempo a ordenar y copiar
+información, y más tiempo a revisar y tomar decisiones.
+
+Imaginen a un compañero que puede ayudarnos con los documentos que tenemos
+abiertos: puede resumir, proponer un borrador o ayudarnos a organizar
+pendientes. Como con cualquier compañero, necesitamos darle instrucciones
+claras y comprobar su trabajo.
+
+Antes de empezar, abriremos la carpeta que contiene nuestros documentos.
+Durante la clase veremos qué es Cursor, para qué sirve, cómo está organizado
+y cómo practicar con ejemplos sencillos.»
+
+[Usa «Empezar la clase» o el índice para ir al primer apartado. Explica que
+«Ir a los ejercicios» permite volver directamente a la práctica.]
+
+
+00 / UN POCO DE HISTORIA
+
+[Señala la captura, los identificadores de Elon Musk y X y el enlace a la
+fuente. La imagen es una captura compartida en clase, atribuida a SpaceX;
+el enlace lleva al informe de la operación presentado ante la SEC.]
+
+«Antes de ver cómo se usa Cursor, conozcamos un dato de su historia.
+Cursor fue creado por Anysphere. En 2026, SpaceX, la compañía fundada por
+Elon Musk, acordó adquirir Anysphere mediante una operación con acciones.
+La adquisición se completó el 14 de agosto de ese año.
+
+La captura muestra una publicación atribuida a SpaceX sobre la compra y la
+colaboración en modelos de inteligencia artificial. Para comprobar los
+datos de la adquisición, podemos consultar el informe enlazado debajo.
+
+Antes de entrar en la herramienta, veamos también sus perfiles junto a
+los de otro editor conocido.»
+
+
+EN PERSPECTIVA / CURSOR Y VISUAL STUDIO CODE
+
+[Señala ambas capturas: Cursor a la izquierda y Visual Studio Code a la
+derecha. Son perfiles en X, no capturas completas de los editores.]
+
+«Aquí vemos cómo se presentan Cursor y Visual Studio Code en sus perfiles
+de X. Ambos son herramientas con las que podemos trabajar con archivos y
+código. En esta clase nos centraremos en Cursor y en cómo aprovecharlo para
+tareas cotidianas.»
+
+
+01 / QUÉ ES CURSOR
+
+[Señala las tres tarjetas: Contexto, Acción y Control.]
+
+«Cursor es un editor con funciones de inteligencia artificial. No tenemos
+que usarlo únicamente para programar: también podemos trabajar con notas,
+correos y otros documentos de texto.
+
+Primero, contexto: si abrimos una carpeta y señalamos los archivos
+pertinentes, el asistente puede consultarlos para entender mejor nuestra
+petición. No debemos suponer que conoce todos los documentos o que ha
+entendido correctamente todo lo que dicen.
+
+Segundo, acción: además de responder en una conversación, puede ayudarnos
+a crear archivos o proponer cambios. La diferencia es que el resultado
+puede quedar en nuestro espacio de trabajo.
+
+Tercero, control: revisamos qué se ha creado o modificado y decidimos qué
+conservar. Antes de trabajar, conviene comprobar las aprobaciones y los
+permisos configurados. Una respuesta rápida no es necesariamente una
+respuesta correcta.»
+
+[Señala la analogía del compañero.]
+
+«La comparación con un compañero es útil para recordar que sigue haciendo
+falta una persona responsable: nosotros decidimos qué pedir, qué información
+compartir y qué entregar.»
+
+
+02 / TRABAJO DE TODOS LOS DÍAS
+
+[Recorre las cuatro tarjetas de izquierda a derecha.]
+
+«Empecemos por tareas conocidas:
+
+1. De reunión a acción: podemos convertir notas desordenadas en decisiones,
+   responsables y pendientes. Si una persona o una fecha no aparece, hay
+   que dejarlo señalado, no inventarlo.
+
+2. Un correo difícil: podemos pedir varios tonos para comunicar lo mismo.
+   Después revisamos que no se hayan cambiado fechas, compromisos ni el
+   sentido del mensaje.
+
+3. Una propuesta clara: a partir de un pedido, podemos preparar un primer
+   borrador. Lo importante es separar lo que el cliente confirmó de lo que
+   todavía debemos preguntar.
+
+4. Una mejor decisión: podemos pedir una comparación de opciones, ventajas,
+   riesgos y dudas. La herramienta ayuda a ordenar las posibilidades; la
+   decisión y la comprobación de los datos siguen siendo nuestras.»
+
+[Pregunta al grupo qué tarea de estas les consume más tiempo y escucha uno
+o dos ejemplos antes de continuar.]
+
+
+03 / LAS PARTES QUE IMPORTAN
+
+[Muestra las siete tarjetas. Si tienes Cursor abierto, señala cada parte
+en la aplicación cuando sea posible.]
+
+«Vamos a reconocer las piezas principales del espacio de trabajo:
+
+1. Carpeta de trabajo. Es el lugar donde están nuestros archivos. Al abrir
+   una carpeta completa, trabajamos con los documentos de un mismo proyecto.
+   Para esta clase usaremos material-clase.
+
+2. Chat. Es el espacio de conversación. Podemos preguntar qué dice un
+   archivo, pedir un resumen o explorar una idea antes de cambiar nada.
+
+3. Agent. Es un modo para tareas que pueden requerir varios pasos y, según
+   la configuración, crear o editar archivos. Una petición útil podría ser:
+   “prepara una lista de tareas y guárdala en un archivo nuevo”.
+
+4. La arroba. Escribimos @ para señalar un archivo u otro contexto
+   disponible. Esto ayuda a indicar de dónde debe salir la información,
+   aunque no elimina la necesidad de comprobar la respuesta.
+
+5. Revisión de cambios. Antes de aceptar una modificación, comparamos lo
+   que había con lo que se propone. En un archivo nuevo, también debemos
+   abrir y leer el contenido completo. Si algo no sirve, lo rechazamos o
+   pedimos una corrección.
+
+6. Plan. Para una tarea amplia, podemos pedir primero una propuesta de
+   pasos. La revisamos, aclaramos lo que falta y después decidimos si
+   queremos que el asistente continúe.
+
+7. Selector de modelo. Es el menú para elegir qué modelo de inteligencia
+   artificial responde. Podemos probar otro modelo para comparar enfoques,
+   pero cambiar de modelo no sustituye la revisión de los resultados.»
+
+
+03 / UNA MIRADA DE CERCA: PANEL DE AGENT
+
+[Señala la imagen y sigue las flechas numeradas. En una pantalla pequeña,
+desplaza la imagen de lado a lado. Aclara que es una captura y que la
+posición o disponibilidad de los controles puede cambiar.]
+
+«Aquí vemos el panel donde le damos instrucciones al agente:
+
+1. New Agent es la pestaña de la conversación abierta. Nos ayuda a
+   identificar el espacio en el que estamos trabajando; la cruz permite
+   cerrar la pestaña.
+
+2. El cuadro de instrucciones es donde escribimos la petición. Conviene
+   decir qué necesitamos, con qué información debe trabajar y qué forma
+   esperamos del resultado.
+
+3. La barra inclinada y la arroba ofrecen maneras de usar comandos o
+   habilidades y de señalar contexto. Por ejemplo, podemos escribir @ y
+   seleccionar notas-reunion.txt para pedir un resumen de ese documento.
+   Las opciones disponibles dependen de la configuración.
+
+4. El selector de modo muestra Agent en esta imagen. Al abrir el menú
+   podemos consultar los otros modos disponibles. Elegimos el modo según
+   si queremos conversar, planear o realizar una tarea.
+
+5. El selector de modelo muestra Grok 4.7 en la captura. El nombre que
+   veamos en nuestro equipo puede ser distinto; las opciones dependen del
+   plan y de los modelos disponibles.
+
+6. El clip sirve para adjuntar un archivo y aportar contexto. Antes de
+   adjuntar uno, comprobamos que podemos compartir su contenido.
+
+7. El micrófono permite introducir el mensaje por voz cuando esa función y
+   los permisos necesarios están disponibles.»
+
+[Señala las explicaciones debajo de la imagen.]
+
+«No necesitamos memorizar todos los controles hoy. Podemos volver a este
+diagrama cada vez que aparezca una duda.»
+
+
+04 / ¿Y FRENTE A OTRAS IA?
+
+[Señala las tres tarjetas de comparación.]
+
+«No se trata de declarar una herramienta ganadora, sino de elegir el lugar
+adecuado para cada trabajo.
+
+Un chat en el navegador puede ser cómodo para hacer una pregunta o explorar
+una idea. Para trabajar con nuestros documentos, quizá tengamos que
+compartirlos o trasladar después el resultado.
+
+Un asistente dentro de una aplicación, por ejemplo un procesador de textos
+o una hoja de cálculo, puede ser práctico cuando la tarea ocurre allí.
+Su acceso a otros documentos depende del producto y de los permisos.
+
+Cursor reúne la conversación y el trabajo con archivos en una carpeta.
+Eso puede ser útil cuando necesitamos consultar varios documentos o
+preparar cambios. En cualquier caso, la herramienta acelera el proceso;
+el criterio sigue siendo nuestro.»
+
+
+05 / INVITA A GROK A CUESTIONAR
+
+[Señala la explicación de Grok, la nota de disponibilidad y el consejo
+desplegable.]
+
+«Grok es una familia de modelos de xAI. Si aparece entre los modelos de
+Cursor que tenemos disponibles, podemos seleccionarlo desde el menú del
+panel. No todas las cuentas o configuraciones ofrecen las mismas opciones.
+
+Una forma útil de usar cualquier modelo es pedirle una mirada crítica:
+¿qué estamos dando por hecho?, ¿qué riesgos vemos?, ¿qué debemos confirmar?
+Después comprobamos cada afirmación. Una respuesta segura o un tono directo
+no convierten una suposición en un hecho.»
+
+[Muestra la tarjeta «Una mirada crítica» y su botón Copiar.]
+
+«La práctica adicional utiliza el brief del cliente. Se señala el archivo
+con @, se pide identificar riesgos y supuestos, y se solicita guardar el
+resultado como critica-grok.txt. Antes de aceptar, debemos comprobar que
+las alternativas sean razonables y que las dudas sigan presentadas como
+dudas.
+
+Podemos hacer esta práctica ahora o volver a ella después del ejercicio 3,
+cuando ya tengamos una propuesta con la que comparar la crítica. Si Grok
+no aparece, podemos probar otro modelo.»
+
+
+06 / AHORA TE TOCA A TI
+
+[Abre la carpeta material-clase en Cursor. Señala la secuencia de la página
+y abre la pista desplegable.]
+
+«En las tres prácticas seguiremos el mismo recorrido: abrir la carpeta,
+señalar el archivo con @, pedir un resultado, leer lo que se propone y
+aceptarlo o rechazarlo. Al señalar el archivo, seleccionémoslo en el menú
+de Cursor para asegurarnos de que la referencia se agregó correctamente.
+
+Cada recuadro tiene un mensaje y un botón Copiar. Podemos copiarlo y
+pegarlo en Cursor; si el botón no funciona, seleccionamos el texto y lo
+copiamos manualmente. Antes de enviarlo, leamos qué estamos pidiendo.»
+
+
+PRÁCTICA 01 / DE REUNIÓN A TAREAS
+
+[Abre notas-reunion.txt y muestra el primer mensaje de la práctica.]
+
+«Primero vamos a trabajar en Chat. Señalamos notas-reunion.txt con @ y
+pedimos un resumen, las decisiones y los pendientes con sus responsables.
+También pedimos que se indiquen las dudas, en lugar de inventar datos.
+
+En las notas hay una decisión concreta: probar una bandeja compartida
+durante dos semanas. Pero todavía no se ha elegido la herramienta. Marta
+preparará un borrador para el 14 de septiembre, mientras que Luis revisará
+cuántas consultas entraron sin que haya una fecha acordada. Además, la
+persona que definirá los turnos está pendiente de confirmar.»
+
+[Copia y envía el primer mensaje. Revisa la respuesta con el grupo. Luego
+cambia a Agent y copia y envía el segundo mensaje.]
+
+«Ahora pedimos guardar el resultado en tareas-reunion.txt. Al abrir el
+archivo nuevo, comparamos nombres, fechas y decisiones con las notas. Si
+apareció una fecha para Luis o un responsable de turnos que no estaba en
+el original, debemos corregirlo o rechazarlo.»
+
+
+PRÁCTICA 02 / UN CORREO QUE SE PUEDE ENVIAR
+
+[Abre correo-dificil.txt y muestra los dos mensajes de la página.]
+
+«Este correo necesita pedir información sin perder claridad. En Chat,
+señalamos el archivo y pedimos tres versiones: cercana, formal y breve.
+El propósito no es cambiar el mensaje, sino escoger una forma adecuada
+de decirlo.
+
+El correo original pide el presupuesto aproximado y el nombre de la persona
+que aprobará los contenidos antes del viernes 11 de septiembre. También
+advierte que, si la información no llega, habrá que mover la entrega.
+Esos puntos deben seguir claros.»
+
+[Copia y envía el primer mensaje. Elige una de las versiones con el grupo.
+En el segundo mensaje, sustituye el texto entre corchetes por el tono
+elegido antes de enviarlo en Agent.]
+
+«Ahora pedimos que reemplace el borrador con la versión elegida. Antes de
+aceptar, revisamos la diferencia: ¿se conserva el plazo?, ¿sigue clara la
+petición?, ¿se añadió alguna promesa o disculpa que no queríamos hacer?,
+¿el tono suena como nosotros?»
+
+
+PRÁCTICA 03 / UNA PROPUESTA DE UNA PÁGINA
+
+[Abre brief-cliente.txt y muestra el mensaje de la página.]
+
+«Tienda Loma quiere que más clientes vuelvan a comprar y está pensando en
+una campaña por correo y quizás por mensajes. Pero todavía hay información
+sin confirmar: el estado de la lista, la oferta, el presupuesto, quién
+preparará las imágenes y quién aprobará los mensajes.
+
+También debemos confirmar el permiso para contactar a las personas.
+Empezar a mediados de octubre es una intención condicionada a revisar
+la lista y aprobar el contenido, no una fecha garantizada.»
+
+[En Agent, señala el brief con @ y copia y envía el mensaje. Abre después
+propuesta.txt.]
+
+«Leemos la propuesta antes de aceptarla. Debe distinguir lo que sabemos
+de lo que falta preguntar. No debería presentar un presupuesto inventado,
+un plazo definitivo ni una oferta no acordada como si fueran compromisos.
+
+Si queremos, volvemos ahora a la práctica adicional de Grok o de otro
+modelo y comparamos sus críticas con esta propuesta. Las diferencias nos
+dan preguntas para investigar, no respuestas definitivas.»
+
+
+07 / UNA PEQUEÑA LISTA. UN MEJOR RESULTADO.
+
+[Recorre la lista final y usa cada punto como recordatorio.]
+
+«Para terminar, quedémonos con este recorrido:
+
+Abrir la carpeta correcta. Señalar con @ el archivo que aporta contexto.
+Pedir un resultado claro y, cuando haga falta, solicitar que se guarde en
+un archivo. Leer con calma lo que se creó o cambió. Aceptar solo lo que
+sirva. Y, si el enfoque o el tono no convence, probar otro modelo o
+reformular la petición.
+
+La idea principal es sencilla: tú pides, tú revisas y tú decides. La IA
+puede ayudar a avanzar, pero la responsabilidad sobre lo que entregamos
+sigue siendo nuestra.»
+
+[Invita a compartir una tarea real que cada participante podría probar,
+recordando no compartir información sensible sin autorización. Usa
+«Volver arriba» si quieres repasar algún apartado.]

@@ -45,6 +45,7 @@
     .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 27px; }
     .button-link { display: inline-flex; gap: 32px; align-items: center; padding: 14px 20px; background: var(--dark); color: white; text-decoration: none; font-size: 15px; font-weight: 700; }
     .button-link:hover { background: var(--green); }
+    .section-next { display: flex; justify-content: flex-end; margin-top: 40px; }
     .text-link { color: var(--green); font-size: 15px; font-weight: 700; text-underline-offset: 4px; }
     .hero-note { padding: 28px 30px; border: 1px solid #cbd9cb; background: var(--pale); }
     .hero-note .note-top { color: var(--green); font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
@@ -70,6 +71,35 @@
     .section-number { padding-top: 9px; color: var(--green); font-size: 13px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
     h2 { margin-bottom: 18px; font-size: clamp(43px, 5vw, 68px); line-height: 1.06; }
     .section-intro { max-width: 780px; margin-bottom: 0; color: #5d6b62; font-size: 21px; line-height: 1.55; }
+    .history-section { background: #e6ede4; }
+    .history-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: clamp(35px, 6vw, 80px); }
+    .history-image { margin: 0; }
+    .history-image img { display: block; width: 100%; height: auto; border: 1px solid #29342e; }
+    .history-image figcaption { margin-top: 12px; color: var(--muted); font-size: 14px; line-height: 1.5; }
+    .history-copy p:not(.eyebrow) { color: #526358; }
+    .history-copy .history-source { margin-bottom: 0; font-size: 14px; }
+    .history-source a { color: var(--green); font-weight: 700; text-underline-offset: 3px; }
+    .history-people { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0; }
+    .history-badge { display: inline-flex; align-items: center; gap: 10px; padding: 8px 13px 8px 8px; border: 1px solid #c5d5c6; background: var(--white); color: var(--dark); font-size: 14px; font-weight: 700; }
+    .history-icon { display: grid; place-items: center; width: 34px; height: 34px; background: var(--dark); color: white; }
+    .history-icon svg { width: 19px; height: 19px; fill: currentColor; }
+    .history-icon-x { font-size: 20px; font-weight: 600; line-height: 1; }
+    .profiles-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .profile-figure { margin: 0; padding: 18px; border: 1px solid var(--line); background: var(--white); }
+    .profile-figure img { display: block; width: 100%; height: auto; }
+    .profile-figure figcaption { margin-top: 16px; color: var(--muted); font-size: 15px; }
+    .profile-figure strong { display: block; color: var(--ink); font-size: 20px; }
+    .tips-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: stretch; }
+    .tips-image { margin: 0; padding: 24px; background: var(--pale); border: 1px solid #cbd9cb; }
+    .tips-image img { display: block; width: min(100%, 362px); height: auto; margin: 0 auto; }
+    .tips-image figcaption { margin-top: 16px; color: var(--muted); font-size: 14px; line-height: 1.5; }
+    .tips-panel { display: flex; flex-direction: column; padding: clamp(24px, 4vw, 48px); background: var(--white); border: 1px solid var(--line); }
+    .tip-slide h3 { margin-bottom: 18px; font-family: var(--serif); font-size: clamp(30px, 3vw, 42px); font-weight: 400; line-height: 1.15; }
+    .tip-slide p { color: #627067; }
+    .tips-controls { display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto; padding-top: 24px; }
+    .tips-controls[hidden], .tip-slide[hidden] { display: none; }
+    .tips-controls button { padding: 10px 16px; border: 1px solid var(--green); background: var(--white); color: var(--green); font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; }
+    .tips-controls button:hover { background: var(--pale); }
     .three-grid, .four-grid, .parts-grid { display: grid; gap: 16px; }
     .three-grid { grid-template-columns: repeat(3, 1fr); }
     .four-grid { grid-template-columns: repeat(4, 1fr); }
@@ -88,6 +118,26 @@
     .parts-grid .card:last-child { background: var(--pale); border-color: #cbd9cb; }
     .parts-grid .card p + p { margin-top: 12px; }
     .parts-grid strong { color: var(--ink); }
+    .agent-guide { margin-top: 72px; }
+    .agent-guide h3 { margin-bottom: 12px; font-family: var(--serif); font-size: clamp(32px, 4vw, 46px); font-weight: 400; letter-spacing: -.035em; line-height: 1.15; }
+    .agent-guide-intro { max-width: 760px; color: #627067; }
+    .agent-figure { margin: 30px 0 32px; padding: 18px; border: 1px solid var(--line); background: var(--white); }
+    .agent-diagram-scroll { overflow-x: auto; }
+    .agent-diagram-scroll:focus-visible { outline: 3px solid #bd8f35; outline-offset: 3px; }
+    .agent-diagram { display: block; width: 100%; min-width: 800px; height: auto; }
+    .agent-arrows { filter: drop-shadow(0 0 2px #fffefa); }
+    .agent-figure figcaption { margin-top: 8px; color: var(--muted); font-size: 14px; }
+    .agent-details { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .agent-details .card h4 { margin: 0 0 12px; font-size: 19px; line-height: 1.25; }
+    .customizations-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, .9fr); gap: 55px; align-items: start; }
+    .customizations-figure { margin: 0; }
+    .customizations-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+    .customizations-figure figcaption { margin-top: 8px; color: var(--muted); font-size: 14px; }
+    .customizations-copy { padding: 32px; border: 1px solid var(--line); background: var(--white); }
+    .customizations-copy h3 { margin-bottom: 12px; font-family: var(--serif); font-size: 30px; font-weight: 400; line-height: 1.2; }
+    .customizations-copy p { color: #526358; font-size: 17px; }
+    .customizations-copy p:last-child { margin-bottom: 0; }
+    .agent-details .card-label { margin-bottom: 16px; }
     .compare { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .compare .card { padding: 31px; }
     .compare .featured { border-color: var(--green); background: #eaf1e9; }
@@ -140,7 +190,7 @@
       .wrap { width: min(100% - 56px, 1320px); }
       .nav { gap: 24px; }
       .hero-grid { grid-template-columns: 1fr 270px; gap: 35px; }
-      .parts-grid, .four-grid { grid-template-columns: repeat(2, 1fr); }
+      .parts-grid, .four-grid, .agent-details { grid-template-columns: repeat(2, 1fr); }
       .grok-layout { gap: 35px; }
     }
     @media (max-width: 700px) {
@@ -152,7 +202,7 @@
       .nav-links { gap: 21px; }
       .nav-links a { padding: 10px 0; font-size: 13px; }
       .hero { padding: 60px 0 50px; }
-      .hero-grid, .grok-layout, .section-heading, .exercise { grid-template-columns: 1fr; }
+      .hero-grid, .grok-layout, .history-layout, .section-heading, .exercise, .tips-layout, .customizations-layout { grid-template-columns: 1fr; }
       .hero-grid { gap: 40px; }
       .hero-note { max-width: 440px; }
       .index-row { display: block; margin-top: 48px; }
@@ -160,7 +210,7 @@
       .section { padding: 65px 0; }
       .section-heading { gap: 15px; margin-bottom: 32px; }
       .section-number { padding: 0; }
-      .three-grid, .compare, .checklist { grid-template-columns: 1fr; }
+      .three-grid, .compare, .checklist, .profiles-grid { grid-template-columns: 1fr; }
       .four-grid, .parts-grid { grid-template-columns: 1fr 1fr; }
       .card { padding: 23px; }
       .parts-grid .card, .practice-card { min-height: 0; }
@@ -170,12 +220,13 @@
       .footer-row { display: block; }
     }
     @media (max-width: 430px) {
-      .four-grid, .parts-grid { grid-template-columns: 1fr; }
+      .four-grid, .parts-grid, .agent-details { grid-template-columns: 1fr; }
       h1 { font-size: 55px; }
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
     @media print {
-      .topbar, .copy-button { display: none; }
+      .topbar, .copy-button, .section-next, .tips-controls { display: none; }
+      .tip-slide[hidden] { display: block; }
       .wrap { width: 100%; }
       .section, .hero { padding: 35px 0; }
       .card, .exercise, .grok-box, .prompt { break-inside: avoid; }
@@ -187,9 +238,14 @@
     <div class="wrap nav">
       <a class="brand" href="#inicio"><span class="brand-mark">C</span> Cursor / clase práctica</a>
       <nav class="nav-links" aria-label="Secciones de la clase">
+        <a href="#historia">Historia</a>
+        <a href="#perfiles">Perfiles</a>
         <a href="#que-es">Qué es</a>
         <a href="#usos">Usos</a>
         <a href="#partes">Partes</a>
+        <a href="#panel-agent">Panel Agent</a>
+        <a href="#customizaciones-grok">Customizaciones y Grok Bot</a>
+        <a href="#tips">Tips</a>
         <a href="#comparacion">Comparación</a>
         <a href="#grok">Grok</a>
         <a href="#ejercicios">Ejercicios</a>
@@ -207,7 +263,7 @@
             <h1>Menos copiar y pegar.<br><em>Más avanzar.</em></h1>
             <p class="hero-lead">Cursor para el trabajo diario: aprende a transformar notas, correos e ideas en documentos útiles, sin perder el control de lo que entregas.</p>
             <div class="hero-actions">
-              <a class="button-link" href="#que-es">Empezar la clase <span aria-hidden="true">↗</span></a>
+              <a class="button-link" href="#historia">Empezar la clase <span aria-hidden="true">↗</span></a>
               <a class="text-link" href="#ejercicios">Ir a los ejercicios ↓</a>
             </div>
           </div>
@@ -224,11 +280,52 @@
         <div class="index-row">
           <span class="index-label">En esta clase</span>
           <div class="index-links">
-            <a href="#que-es">01 / Qué es</a><a href="#usos">02 / Usos</a><a href="#partes">03 / Partes</a><a href="#comparacion">04 / Comparación</a><a href="#grok">05 / Grok</a><a href="#ejercicios">06 / Ejercicios</a><a href="#para-llevar">07 / Para llevar</a>
+            <a href="#historia">00 / Historia</a><a href="#perfiles">Perfiles</a><a href="#que-es">01 / Qué es</a><a href="#usos">02 / Usos</a><a href="#partes">03 / Partes</a><a href="#tips">Tips</a><a href="#comparacion">04 / Comparación</a><a href="#grok">05 / Grok</a><a href="#ejercicios">06 / Ejercicios</a><a href="#para-llevar">07 / Para llevar</a>
           </div>
         </div>
       </div>
     </div>
+
+    <section class="section history-section" id="historia">
+      <div class="wrap history-layout">
+        <figure class="history-image">
+          <img src="publicacion-spacex.png" alt="Captura de una publicación atribuida a SpaceX en X que anuncia la adquisición de Cursor.">
+          <figcaption>Captura compartida en clase: publicación atribuida a SpaceX en X, traducida al español.</figcaption>
+        </figure>
+        <div class="history-copy">
+          <p class="eyebrow">00 / Un poco de historia</p>
+          <h2>Un nuevo capítulo para Cursor.</h2>
+          <p>Cursor fue creado por Anysphere como una herramienta para trabajar con inteligencia artificial. En 2026, SpaceX, la compañía fundada por Elon Musk, acordó adquirir Anysphere en una operación con acciones.</p>
+          <p>La adquisición se completó el <strong>14 de agosto de 2026</strong>. La captura muestra una publicación atribuida a SpaceX sobre la operación y la colaboración en modelos de IA.</p>
+          <div class="history-people" aria-label="Personas y plataformas mencionadas">
+            <span class="history-badge"><span class="history-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 8a7 7 0 0 1 14 0v1H5v-1Z"/></svg></span>Elon Musk · SpaceX</span>
+            <span class="history-badge"><span class="history-icon history-icon-x" aria-hidden="true">𝕏</span>Publicación en X</span>
+          </div>
+          <p class="history-source">Fuente sobre la adquisición: <a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm">informe de SpaceX ante la SEC ↗</a>.</p>
+        </div>
+      </div>
+      <div class="wrap section-next"><a class="button-link" href="#perfiles" aria-label="Siguiente: Cursor y Visual Studio Code">Siguiente <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="section" id="perfiles">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="section-number">En perspectiva</div>
+          <div><h2>Cursor y Visual Studio Code.</h2><p class="section-intro">Dos herramientas para trabajar con archivos y código, vistas a través de sus perfiles en X.</p></div>
+        </div>
+        <div class="profiles-grid">
+          <figure class="profile-figure">
+            <img src="perfil-cursor.png" alt="Captura del perfil de Cursor en X, identificado como @cursor_ai.">
+            <figcaption><strong>Cursor</strong>Perfil en X · @cursor_ai</figcaption>
+          </figure>
+          <figure class="profile-figure">
+            <img src="perfil-vscode.png" alt="Captura del perfil de Visual Studio Code en X, identificado como @code.">
+            <figcaption><strong>Visual Studio Code</strong>Perfil en X · @code</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="wrap section-next"><a class="button-link" href="#que-es" aria-label="Siguiente: Qué es Cursor">Siguiente <span aria-hidden="true">↓</span></a></div>
+    </section>
 
     <section class="section" id="que-es">
       <div class="wrap">
@@ -243,6 +340,7 @@
         </div>
         <div class="analogy"><span class="icon" aria-hidden="true">“</span><p><strong>Piénsalo así:</strong> es como trabajar con un compañero que tiene los documentos abiertos y propone cambios, en lugar de un chat suelto al que tienes que copiar y pegar todo.</p></div>
       </div>
+      <div class="wrap section-next"><a class="button-link" href="#usos" aria-label="Siguiente: Trabajo de todos los días">Siguiente <span aria-hidden="true">↓</span></a></div>
     </section>
 
     <section class="section" id="usos">
@@ -258,6 +356,7 @@
           <article class="card practice-card"><span class="card-label">04</span><h3>Una mejor decisión</h3><p>Compara dos opciones, sus riesgos y lo que aún falta saber.</p></article>
         </div>
       </div>
+      <div class="wrap section-next"><a class="button-link" href="#partes" aria-label="Siguiente: Las partes que importan">Siguiente <span aria-hidden="true">↓</span></a></div>
     </section>
 
     <section class="section" id="partes">
@@ -275,7 +374,102 @@
           <article class="card"><span class="card-label">06</span><h3>Plan</h3><p><strong>Qué es:</strong> una propuesta de pasos antes de hacer el trabajo.</p><p><strong>Cuándo:</strong> para tareas amplias: pide primero el plan y autoriza después la ejecución.</p></article>
           <article class="card"><span class="card-label">07</span><h3>Selector de modelo</h3><p><strong>Qué es:</strong> el menú para elegir la IA que responde.</p><p><strong>Cuándo:</strong> cambia de modelo sin salir de tu trabajo si quieres otra perspectiva o tono.</p></article>
         </div>
+        <div class="agent-guide" id="panel-agent">
+          <p class="eyebrow">Una mirada de cerca</p>
+          <h3>Conoce el panel de Agent.</h3>
+          <p class="agent-guide-intro">Aquí escribes tus instrucciones y eliges cómo trabajar con la IA. Sigue las flechas y consulta cada número debajo de la imagen.</p>
+          <figure class="agent-figure">
+            <div class="agent-diagram-scroll" tabindex="0" role="region" aria-label="Diagrama del panel de Agent; desplázate horizontalmente para verlo completo">
+              <svg class="agent-diagram" viewBox="0 0 1000 500" role="img" aria-labelledby="agent-diagram-title agent-diagram-description">
+                <title id="agent-diagram-title">Elementos del panel de Agent de Cursor</title>
+                <desc id="agent-diagram-description">Una captura del panel con flechas numeradas que señalan la pestaña New Agent, el cuadro de instrucciones, los comandos y el contexto, el modo Agent, el modelo, los archivos adjuntos y el micrófono. Cada elemento se explica a continuación.</desc>
+                <defs>
+                  <marker id="agent-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#245c48"/></marker>
+                </defs>
+                <image href="panel-agent.png" x="190" y="115" width="620" height="269" />
+                <g class="agent-arrows" fill="none" stroke="#245c48" stroke-width="2" marker-end="url(#agent-arrow)">
+                  <path d="M110 67 H238 V141"/>
+                  <path d="M455 67 V115 L480 230"/>
+                  <path d="M822 67 H750 L400 191"/>
+                  <path d="M130 430 H235 L268 338"/>
+                  <path d="M365 430 V397 L365 338"/>
+                  <path d="M633 430 V397 L734 338"/>
+                  <path d="M842 430 H785 L768 338"/>
+                </g>
+                <g fill="#173d30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700">
+                  <text x="30" y="61">01 / Nuevo Agent</text>
+                  <text x="390" y="61">02 / Instrucciones</text>
+                  <text x="790" y="61">03 / Comandos y @</text>
+                  <text x="30" y="455">04 / Modo</text>
+                  <text x="292" y="455">05 / Modelo</text>
+                  <text x="570" y="455">06 / Adjuntar</text>
+                  <text x="790" y="455">07 / Voz</text>
+                </g>
+              </svg>
+            </div>
+            <figcaption>Panel de Agent en Cursor. En pantallas pequeñas, desplaza la imagen de lado a lado. La interfaz puede variar según la versión.</figcaption>
+          </figure>
+          <div class="agent-details">
+            <article class="card"><span class="card-label">01 / Pestaña</span><h4>New Agent</h4><p>Identifica la conversación abierta con el agente. Desde esta pestaña puedes volver a ella o cerrarla con la ×.</p></article>
+            <article class="card"><span class="card-label">02 / Mensaje</span><h4>Cuadro de instrucciones</h4><p>Escribe aquí lo que necesitas: una pregunta, una tarea o el resultado que quieres obtener. Cuanto más claro seas, mejor podrá ayudarte.</p></article>
+            <article class="card"><span class="card-label">03 / Referencias</span><h4>Comandos y contexto</h4><p>Escribe <strong>/</strong> para ver comandos o habilidades disponibles y <strong>@</strong> para señalar archivos u otro contexto relevante para tu petición.</p></article>
+            <article class="card"><span class="card-label">04 / Forma de trabajo</span><h4>Selector de modo</h4><p>En la imagen está seleccionado Agent, que puede realizar tareas en varios pasos. Abre el menú para consultar los otros modos disponibles.</p></article>
+            <article class="card"><span class="card-label">05 / IA</span><h4>Selector de modelo</h4><p>Permite elegir el modelo que responderá. En esta captura aparece Grok 4.7; las opciones dependen del plan y de la disponibilidad.</p></article>
+            <article class="card"><span class="card-label">06 / Archivo</span><h4>Adjuntar</h4><p>El icono de clip permite añadir un archivo a la conversación para darle contexto a tu solicitud.</p></article>
+            <article class="card"><span class="card-label">07 / Entrada</span><h4>Micrófono</h4><p>Permite usar la voz para introducir tu mensaje, según los permisos y las funciones disponibles en tu equipo.</p></article>
+          </div>
+        </div>
       </div>
+      <div class="wrap section-next"><a class="button-link" href="#customizaciones-grok" aria-label="Siguiente: Customizaciones y Grok Bot">Siguiente <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="section" id="customizaciones-grok">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="section-number">Personaliza Cursor</div>
+          <div><h2>Customizaciones y Grok Bot</h2><p class="section-intro">Amplía lo que puedes hacer en Cursor con herramientas y asistentes configurables.</p></div>
+        </div>
+        <div class="customizations-layout">
+          <figure class="customizations-figure">
+            <img src="customizaciones-grok-bot.png" alt="Panel de Cursor con el anuncio Meet Grok Bot, opciones de Plugins, MCPs, Skills, Subagents, Rules y Commands, y conexiones disponibles.">
+            <figcaption>Panel de herramientas y personalizaciones de Cursor. Las opciones disponibles dependen de la versión y configuración.</figcaption>
+          </figure>
+          <div class="customizations-copy">
+            <h3>Adapta Cursor a tu forma de trabajar.</h3>
+            <p>En este panel puedes explorar <strong>Plugins, MCPs, Skills, Subagents, Rules</strong> y <strong>Commands</strong> para añadir herramientas, contexto e instrucciones a tu flujo de trabajo.</p>
+            <p>La captura también muestra la invitación a <strong>Grok Bot</strong>, un compañero de IA al que puedes asignar trabajo. Revisa las opciones y permisos antes de conectar servicios o habilitar nuevas herramientas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrap section-next"><a class="button-link" href="#tips" aria-label="Siguiente: Tips para usar Cursor">Siguiente <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="section" id="tips">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="section-number">Para tener en cuenta</div>
+          <div><h2>Tips para usar Cursor.</h2><p class="section-intro">Unas buenas prácticas para trabajar con claridad y mantener el control.</p></div>
+        </div>
+        <div class="tips-layout">
+          <figure class="tips-image">
+            <img src="cloud-agents.png" alt="Anuncio de Cloud Agents en Cursor, con opciones para iniciar agentes a distancia y revisar su trabajo.">
+            <figcaption>Cloud Agents en Cursor. Su disponibilidad y funcionamiento pueden variar según el plan y la versión.</figcaption>
+          </figure>
+          <div class="tips-panel" aria-label="Consejos para usar Cursor">
+            <div class="tips-slides" aria-live="polite">
+              <article class="tip-slide"><span class="card-label">Consejo 1 de 4</span><h3>Da una instrucción clara.</h3><p>Explica qué necesitas, para quién es y cómo debe verse el resultado. Si la tarea es grande, divídela en pasos.</p></article>
+              <article class="tip-slide"><span class="card-label">Consejo 2 de 4</span><h3>Señala el contexto.</h3><p>Abre la carpeta adecuada y usa <strong>@</strong> para indicar los archivos relevantes. Comparte solo la información necesaria.</p></article>
+              <article class="tip-slide"><span class="card-label">Consejo 3 de 4</span><h3>Revisa antes de aceptar.</h3><p>Comprueba los cambios, los datos y el tono. La IA puede equivocarse: tú decides qué conservar.</p></article>
+              <article class="tip-slide"><span class="card-label">Consejo 4 de 4</span><h3>Conoce dónde trabaja el agente.</h3><p>Cloud Agents puede trabajar en la nube. Antes de usarlo, revisa sus permisos y qué información compartes; comprueba el resultado al terminar.</p></article>
+            </div>
+            <div class="tips-controls" hidden>
+              <button type="button" class="tip-previous">← Anterior</button>
+              <button type="button" class="tip-next">Siguiente consejo →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap section-next"><a class="button-link" href="#comparacion" aria-label="Siguiente: Comparación con otras IA">Siguiente <span aria-hidden="true">↓</span></a></div>
     </section>
 
     <section class="section" id="comparacion">
@@ -291,6 +485,7 @@
         </div>
         <p class="closing"><strong>El criterio sigue siendo tuyo.</strong> Cursor acelera el borrador y el orden; no sustituye a la persona que decide.</p>
       </div>
+      <div class="wrap section-next"><a class="button-link" href="#grok" aria-label="Siguiente: Grok">Siguiente <span aria-hidden="true">↓</span></a></div>
     </section>
 
     <section class="section grok-section" id="grok">
@@ -324,6 +519,7 @@
           <p class="review"><strong>Antes de aceptar:</strong> comprueba que los riesgos sean razonables y que las alternativas no se presenten como hechos confirmados.</p>
         </div>
       </div>
+      <div class="wrap section-next"><a class="button-link" href="#ejercicios" aria-label="Siguiente: Ejercicios">Siguiente <span aria-hidden="true">↓</span></a></div>
     </section>
 
     <section class="section" id="ejercicios">
@@ -406,6 +602,7 @@
           </article>
         </div>
       </div>
+      <div class="wrap section-next"><a class="button-link" href="#para-llevar" aria-label="Siguiente: Para llevar">Siguiente <span aria-hidden="true">↓</span></a></div>
     </section>
 
     <section class="section takeaway" id="para-llevar">
@@ -427,6 +624,18 @@
   </main>
   <footer><div class="wrap footer-row"><span>CURSOR / GUÍA DE CLASE · TRABAJO DIARIO</span><a href="#inicio">Volver arriba ↑</a></div></footer>
   <script>
+    const tipSlides = document.querySelectorAll('.tip-slide');
+    const tipControls = document.querySelector('.tips-controls');
+    let currentTip = 0;
+    function showTip(index) {
+      currentTip = (index + tipSlides.length) % tipSlides.length;
+      tipSlides.forEach((slide, i) => { slide.hidden = i !== currentTip; });
+    }
+    showTip(currentTip);
+    tipControls.hidden = false;
+    document.querySelector('.tip-previous').addEventListener('click', () => showTip(currentTip - 1));
+    document.querySelector('.tip-next').addEventListener('click', () => showTip(currentTip + 1));
+
     document.querySelectorAll('.copy-button').forEach((button) => {
       button.addEventListener('click', async () => {
         const prompt = button.closest('.prompt');
