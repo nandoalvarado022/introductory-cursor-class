@@ -1,0 +1,62 @@
+index.html
+  s_ad6c8af6b213f1::t_e5a8467bde31e6 128,390
+  s_2a8bbb4295ffa2::t_091f087381aa4e 132-139,205,247,420-421,423-440
+  s_ad6c8af6b213f1::t_0ba2f94cc80235 121-127,129-131,140,193,223,246,377-389,391-419,441
+  s_ad6c8af6b213f1::t_85125e5de4a2e5 87-91,213,242,305-306,308-324
+  s_ad6c8af6b213f1::t_63437fc28d5c9a 74-86,241,266,289-304,325-326,328
+  s_11e0f382fd668b::t_3892414d3fc90a 48,307,327,343,359,472,488,522,605
+  s_11e0f382fd668b::t_d3aafad5160b8d 92-102,228-229,248,283,442-471,627-638
+  s_ad6c8af6b213f1::t_c4062de7ada7ea 329
+actividad/.cursor/skills/pelis/scripts/cartelera.py
+  s_24510c18a21fbd::t_94a27d13ddc7e5 1-4,6-61,77,82-183,185-204
+  s_24510c18a21fbd::t_08162fdc9b019e 5
+  s_24510c18a21fbd::t_b68c4acb8f23ed 62-76,78-81
+  s_24510c18a21fbd::t_756d7f316e32e5 184
+guion-oral-clase.txt
+  s_ad6c8af6b213f1::t_9baa8a3654da1f 1-43,74-359
+  s_ad6c8af6b213f1::t_3647959c9c9270 59-71
+  s_ad6c8af6b213f1::t_57dc7664851c76 44-58,72-73
+actividad/.cursor/skills/pelis/SKILL.md
+  s_24510c18a21fbd::t_388f18988d023d 22,25-26,29
+  s_24510c18a21fbd::t_99811180dfb5eb 1-21,23-24,27-28,30-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "17bf99c8232747ea1486267975aca632ea66b298",
+  "prompts": {},
+  "sessions": {
+    "s_11e0f382fd668b": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "c3652cd3-38ad-4b34-989a-da4a0e5f18ff",
+        "model": "unknown"
+      },
+      "human_author": "Nando (Hernando Alvarado) <nandoalvarado022@gmail.com>"
+    },
+    "s_24510c18a21fbd": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "e27921aa-5be1-4891-ac41-f92cc5b92076",
+        "model": "grok-4.7"
+      },
+      "human_author": "Nando (Hernando Alvarado) <nandoalvarado022@gmail.com>"
+    },
+    "s_2a8bbb4295ffa2": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "fa4feab9-30e2-4938-85ba-dd6f52d1aaaf",
+        "model": "unknown"
+      },
+      "human_author": "Nando (Hernando Alvarado) <nandoalvarado022@gmail.com>"
+    },
+    "s_ad6c8af6b213f1": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "7b4d1268-d5f7-4d71-9e1c-fdb66cf8dde7",
+        "model": "unknown"
+      },
+      "human_author": "Nando (Hernando Alvarado) <nandoalvarado022@gmail.com>"
+    }
+  }
+}
